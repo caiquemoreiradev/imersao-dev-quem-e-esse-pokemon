@@ -1,0 +1,215 @@
+/* Geral ============ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(to right, #EB1700, #B81200, #6B0B00);
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+/* Header ============ */
+
+header {
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h2 span {
+    font-weight: normal;
+}
+
+header h2 strong {
+    background: #F0C41A;
+    padding: 3px;
+}
+
+header .my-info {
+    display: flex;
+    align-items: center;
+}
+
+body header .my-info img {
+    width: 60px;
+    border-radius: 50%;
+    margin-left: 1rem;
+}
+
+/* Main Content ============ */
+
+body .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body .logo img {
+    width: 180px;
+    margin-left: 0.8rem;
+}
+
+body .logo h1 {
+    font-size: 50px;
+    padding: 2rem 4rem 0;
+    text-align: center;
+
+    display: flex;
+}
+
+body h3 {
+    text-align: center;
+    font-weight: normal;
+
+    margin-top: 15px;
+}
+
+div.main__content {
+    padding: 5rem 4rem 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -50px;
+}
+
+/* Pokemon Content ============ */
+
+div.pokemon {
+
+    margin: 60px;
+    border-radius: 10px;
+
+    background: #fff;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 400px;
+    height: 520px;
+}
+
+div.pokemon div.top img.background {
+    width: 400px;
+}
+
+div.pokemon h3 {
+    color: #B81200;
+    font-weight: bold;
+}
+
+div.pokemon img {
+    border-radius: 10px;
+}
+
+div.pokemon img.pokemon__shadow {
+    position: absolute;
+    left: 590px;
+    bottom: 350px;
+
+    width: 200px;
+}
+
+div.pokemon div.pokemon__infos {
+    margin-top: 15px;
+}
+
+div.guess__pokemon {
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+}
+
+div.pokemon div.pokemon__infos input {
+    margin-top: 25px;
+
+    padding: 0.5rem;
+}
+
+div.inputs button {
+    padding: 0.7rem;
+    margin-left: -4px;
+
+    border: none;
+    background: #EB1700;
+
+    color: #fff;
+    font-weight: bold;
+}
+
+div.inputs button:hover {
+    cursor: pointer;
+}
+
+div.hide,
+h3.hide {
+    display: none;
+}
+
+/* Pokemon Wrong ============ */
+
+h3#wrong {
+    font-size: 22px;
+}
+
+/* Pokemon Correct ============ */
+
+div#pokemon_correct {
+    height: 100%;
+    padding: 40px;
+}
+
+div#pokemon_correct div.top #title {
+    color: #47EB1A;
+    padding: 10px;
+
+    font-size: 22px;
+    margin-bottom: 40px;
+    margin-top: -20px;
+}
+
+div#pokemon_correct img {
+    width: 200px;
+}
+
+div#pokemon_correct div.pokemon__infos {
+    display: flex;
+    align-items: center;
+
+    flex-direction: column;
+}
+
+button#reload {
+    padding: 0.7rem;
+    margin-left: -4px;
+
+    width: 120px;
+
+    border: none;
+    background: #EB1700;
+
+    color: #fff;
+    font-weight: bold;
+    margin-top: 10px;
+
+    transform: all 0.2s;
+}
+
+
+button#reload:hover {
+    cursor: pointer;
+
+    transform: scale(1.1);
+}
+

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./styles.css">
+
+    <link rel="shortcut icon" href="./images/coin_favicon.png" type="image/x-icon">
+    <title>ImersãoDev | Aula 02</title>
+</head>
+
+<body>
+   
+
+    <div class="main__content">
+        <div class="logo">
+            <h1 id="title">Quem é esse
+                <img src="./images/pokemon-png-logo.png" alt="">
+                ?</h1>
+        </div>
+
+        <div class="pokemon">
+            <div id="pokemon_wrong" class="guess__pokemon">
+                <div class="top">
+                    <img class='background' src="./images/whoIs.png" alt="">
+                    <img src="./images/shadow-char.png" alt="" class="pokemon__shadow">
+                </div>
+
+                <div class="pokemon__infos">
+                    <h3 class="pokemon__type">Type: Fire</h3>
+
+                    <div class="inputs">
+                        <input id="guess_poke" type="text">
+                        <button onclick="DOM.validatePoke()">Validar</button>
+                    </div>
+
+                    <h3 class="hide" id="wrong">WRONG!!</h3>
+                </div>
+            </div>
+
+            <div id="pokemon_correct" class="hide">
+                <div class="top">
+                    <h3 id="title">Correct</h3>
+                    <img src="./images/char-char.png" alt="" class="pokemon__correct">
+                </div>
+
+                <div class="pokemon__infos">
+                    <h3 class="correct_pokemon__type">Type: Fire</h3>
+
+                    <h3 id="nameCorrectPoke">CHARMANDER</h3>
+                    <button id="reload" onclick="APP.reload()">Próximo Pokemon</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <script src="./scripts.js"></script>
+</body>
+
+</html>
